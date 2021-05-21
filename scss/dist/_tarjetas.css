@@ -2,6 +2,13 @@
 .contenedorTarjetas {
   padding: 2em;
 }
+@media (min-width: 200px) and (max-width: 480px) {
+  .contenedorTarjetas {
+    padding: none;
+    color: #ffffff;
+    font-size: 6px;
+  }
+}
 
 .contenedorTarjetas--galeria {
   width: 100%;
@@ -26,6 +33,12 @@
   margin-top: 1em;
   margin-bottom: 2em;
 }
+@media (min-width: 200px) and (max-width: 480px) {
+  .tarjetasIlustraciones {
+    margin: none;
+    padding: none;
+  }
+}
 
 .tarjetasIlustraciones__ilustraciones {
   width: 100%;
@@ -36,6 +49,12 @@
   overflow: hidden;
   display: flex;
 }
+@media (min-width: 200px) and (max-width: 480px) {
+  .tarjetasIlustraciones__ilustraciones {
+    margin: none;
+    padding: none;
+  }
+}
 
 .tarjetasIlustraciones__ilustraciones--galeria {
   width: 350px;
@@ -45,17 +64,41 @@
   display: inline-block;
   justify-content: space-between;
 }
+@media (min-width: 200px) and (max-width: 480px) {
+  .tarjetasIlustraciones__ilustraciones--galeria {
+    margin: none;
+    padding: none;
+  }
+}
 
 .tarjetasIlustraciones__ilustracion {
   width: 100%;
+}
+@media (min-width: 200px) and (max-width: 480px) {
+  .tarjetasIlustraciones__ilustracion {
+    margin: none;
+    padding: none;
+  }
 }
 
 .tarjetasIlustraciones__ilustracion--galeria {
   width: 100%;
 }
+@media (min-width: 200px) and (max-width: 480px) {
+  .tarjetasIlustraciones__ilustracion--galeria {
+    margin: none;
+    padding: none;
+  }
+}
 
 .tarjetasIlustraciones__descripcionGeneral {
   width: 100%;
+}
+@media (min-width: 200px) and (max-width: 480px) {
+  .tarjetasIlustraciones__descripcionGeneral {
+    margin: none;
+    padding: none;
+  }
 }
 
 .tarjetasIlustraciones__titulo {

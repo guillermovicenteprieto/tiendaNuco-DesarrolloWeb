@@ -134,7 +134,12 @@ $bordes: (
     display: inline-block;
     margin: 30px;
     margin-bottom: 15px;
+    @media (min-width: 200px) and (max-width: 480px) {
+        width: 150px;
+        margin: 10px;
+    }
 }
+
 
 /* normalize */
 *{
@@ -167,6 +172,10 @@ html{
         border-bottom: solid 5px $naranja-nuco;
         border-left: solid 5px $naranja-nuco;
         border-radius: 30px;
+        @media (min-width: 200px) and (max-width: 480px) {
+            width: 200px;
+            border: none;
+            }
     }
 }
 
@@ -288,6 +297,10 @@ html{
     border: solid 5px  $verde-nuco;
     border-radius: 30px;
     margin-bottom: 70px;
+    @media (min-width: 200px) and (max-width: 480px) {
+        width: 150px;
+        margin-bottom: 25px;
+    }
 }
 
 .galeriaTaller__galeriaTallerPintando {
@@ -320,7 +333,7 @@ html{
     padding-bottom: 10px;
     font-weight: bold;
     @media (min-width: 200px) and (max-width: 480px) {
-        line-height: normal;
+        line-height: 1.5;
         letter-spacing: .75;
         word-spacing: .75;
         color: #ffffff;
@@ -404,6 +417,12 @@ html{
     font-weight: bold;
     margin-left: 5em;
     margin-right: 5em;
+    @media (min-width: 200px) and (max-width: 480px) {
+        margin: 1em;
+        padding: 10px;
+        word-spacing: 2px;
+        font-size: 1em;
+    }
 }
 
 
@@ -525,6 +544,9 @@ carrusel*/
     color:$naranja-nuco;
     font-size: 15px;
     text-align: center;
+    @media (min-width: 200px) and (max-width: 480px) {
+        font-size: 10px;
+    }
 }
 
 /*Formularios, Caracteristicas, colores de fondo y párrafo*/
@@ -594,6 +616,10 @@ carrusel*/
     border-radius: 25px;
     padding: 1em;
     margin: 4em;
+    @media (min-width: 200px) and (max-width: 600px) {
+        padding: auto;
+        margin: .5em;
+    }
 }
 
 .formColorFondo {
@@ -677,4 +703,8 @@ a {
 }
 .container {
     max-width: 960px;
+    @media (min-width: 200px) and (max-width: 480px) {
+        margin: none;
+        padding: none;
+    }
 }

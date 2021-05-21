@@ -397,6 +397,11 @@ footer a {
 /*BLOQUES BEM*/
 .contenedorTarjetas {
   padding: 2em; }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .contenedorTarjetas {
+      padding: none;
+      color: #ffffff;
+      font-size: 6px; } }
 
 .contenedorTarjetas--galeria {
   width: 100%;
@@ -418,6 +423,10 @@ footer a {
   margin: 1em;
   margin-top: 1em;
   margin-bottom: 2em; }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .tarjetasIlustraciones {
+      margin: none;
+      padding: none; } }
 
 .tarjetasIlustraciones__ilustraciones {
   width: 100%;
@@ -427,6 +436,10 @@ footer a {
   margin-right: 1em;
   overflow: hidden;
   display: flex; }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .tarjetasIlustraciones__ilustraciones {
+      margin: none;
+      padding: none; } }
 
 .tarjetasIlustraciones__ilustraciones--galeria {
   width: 350px;
@@ -435,15 +448,31 @@ footer a {
   margin: 2em;
   display: inline-block;
   justify-content: space-between; }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .tarjetasIlustraciones__ilustraciones--galeria {
+      margin: none;
+      padding: none; } }
 
 .tarjetasIlustraciones__ilustracion {
   width: 100%; }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .tarjetasIlustraciones__ilustracion {
+      margin: none;
+      padding: none; } }
 
 .tarjetasIlustraciones__ilustracion--galeria {
   width: 100%; }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .tarjetasIlustraciones__ilustracion--galeria {
+      margin: none;
+      padding: none; } }
 
 .tarjetasIlustraciones__descripcionGeneral {
   width: 100%; }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .tarjetasIlustraciones__descripcionGeneral {
+      margin: none;
+      padding: none; } }
 
 .tarjetasIlustraciones__titulo {
   font-family: 'Oswald' sans-serif;
@@ -660,6 +689,10 @@ html {
     border-bottom: solid 5px #f85c32;
     border-left: solid 5px #f85c32;
     border-radius: 30px; }
+    @media (min-width: 200px) and (max-width: 480px) {
+      .galeríaPadreFlex .galeriaHijosFlex {
+        width: 200px;
+        border: none; } }
 
 /* TRANSFORMACIONES agranda imágenes de Galería*/
 .transicionGaleria {
@@ -768,6 +801,10 @@ html {
   border: solid 5px #2fb33a;
   border-radius: 30px;
   margin-bottom: 70px; }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .galeriaBannerFlex__imgBanners {
+      width: 150px;
+      margin-bottom: 25px; } }
 
 .galeriaTaller__galeriaTallerPintando {
   color: white;
@@ -798,7 +835,7 @@ html {
   font-weight: bold; }
   @media (min-width: 200px) and (max-width: 480px) {
     .galeriaTallerPintando--texto {
-      line-height: normal;
+      line-height: 1.5;
       letter-spacing: .75;
       word-spacing: .75;
       color: #ffffff;
@@ -873,6 +910,12 @@ html {
   font-weight: bold;
   margin-left: 5em;
   margin-right: 5em; }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .sectionBase__texto {
+      margin: 1em;
+      padding: 10px;
+      word-spacing: 2px;
+      font-size: 1em; } }
 
 .galeriaTallerPintando--texto {
   margin-top: 2em;
@@ -913,6 +956,10 @@ carrusel*/
   border-bottom: solid 5px #0586e0;
   border-left: solid 5px #0586e0;
   border-radius: 2em; }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .imgTextil {
+      width: 150px;
+      margin: 10px; } }
 
 /*Banner Cerámica*/
 .imgBannerCeramica {
@@ -933,6 +980,10 @@ carrusel*/
   border-bottom: solid 5px #e8bb20;
   border-left: solid 5px #e8bb20;
   border-radius: 2em; }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .imgCeramica {
+      width: 150px;
+      margin: 10px; } }
 
 /*Herramientas de prueba sobre texto alrededor de imágen, Float Flex Overflow*/
 .textoSobreImagen-FloatLeft {
@@ -1013,6 +1064,9 @@ carrusel*/
   color: #f85c32;
   font-size: 15px;
   text-align: center; }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .citaFabricaTomada {
+      font-size: 10px; } }
 
 /*Formularios, Caracteristicas, colores de fondo y párrafo*/
 .formProductos {
@@ -1080,6 +1134,10 @@ carrusel*/
   border-radius: 25px;
   padding: 1em;
   margin: 4em; }
+  @media (min-width: 200px) and (max-width: 600px) {
+    .formContacto {
+      padding: auto;
+      margin: .5em; } }
 
 .formColorFondo {
   background-color: #f85c32; }
@@ -1153,3 +1211,7 @@ a {
 
 .container {
   max-width: 960px; }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .container {
+      margin: none;
+      padding: none; } }
