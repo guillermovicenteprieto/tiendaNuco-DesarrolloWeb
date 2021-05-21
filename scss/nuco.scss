@@ -1,0 +1,680 @@
+@import "media";
+@import "colores";
+@import "estructura-menu";
+@import "tarjetas";
+
+
+/*Variables y PALETA DE COLORES*/
+
+$azul-nuco: #0586e0;
+$rosa-nuco: #feafbc;
+$rosa-nuco-suave: #fdd7dd;
+$verde-nuco: #2fb33a;
+$amarillo-nuco: #e8bb20;
+$naranja-nuco: #f85c32;
+
+$titulo-fuente: normal 1em, 'Oswald';
+
+/*condicionales*/
+
+$tipo: sectionNueva;
+
+.parrafos {
+	@if $tipo==sectionBase{
+	color: $azul-nuco;
+	}	
+
+	@else if $tipo==sectionTwo{
+	color: $verde-nuco;
+	}
+
+	@else if $tipo==sectionThree{
+	color: $naranja-nuco;
+	}
+
+    @else if $tipo==sectionNuena{
+    color: rgba(42, 136, 143, 0.459);
+    }
+
+	@else{
+	color: rgb(0, 0, 0);
+	}
+}
+
+/*bucles*/
+
+@for $titulos from 1 through 5 {
+    .textoTitulo-#{$titulos} {
+        font-size: 3em / $titulos;
+        padding-top: 1em;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 1.5px;
+        word-spacing: 2px; 
+    }
+}
+
+/*each: listas*/
+$nuco-colores: (
+        rosa: $rosa-nuco,
+        amarillo:$amarillo-nuco,
+        naranja: $naranja-nuco,
+);
+
+@each $colores in $nuco-colores {
+    .colorFondo-#{$colores} {
+        background-color: #{$colores};
+    }
+}
+
+
+/*mapa  con each*/
+
+$bordes: (
+    azules: $azul-nuco,
+    rosas: $rosa-nuco,
+    verdes: $verde-nuco,
+    amarillos:$amarillo-nuco,
+    naranjas: $naranja-nuco
+);
+
+@each $colorMap, $colorete in $bordes {
+    .bordesImagenes-#{$colorMap}{
+        border-color: $colorete;
+        margin: 2em;
+        border-radius: 30px;
+    }
+}
+
+/*extend*/
+
+
+/*mixin*/
+@mixin imagenesGaleriasDisplay {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+@mixin imagenesGaleriasBordesNaranja {
+    border-top: solid 5px $naranja-nuco;
+    border-right: solid 5px $naranja-nuco;
+    border-bottom: solid 5px $naranja-nuco;
+    border-left: solid 5px $naranja-nuco;
+    border-radius: 2em;
+}
+
+@mixin imagenesGaleriasBordesAzul {
+    border-top: solid 5px $azul-nuco;
+    border-right: solid 5px $azul-nuco;
+    border-bottom: solid 5px $azul-nuco;
+    border-left: solid 5px $azul-nuco;
+    border-radius: 2em;
+}
+
+
+@mixin imagenesGaleriasBordesAmarillo {
+    border-top: solid 5px $amarillo-nuco;
+    border-right: solid 5px $amarillo-nuco;
+    border-bottom: solid 5px $amarillo-nuco;
+    border-left: solid 5px $amarillo-nuco;
+    border-radius: 2em;
+}
+
+@mixin imagenesGaleriasBordesVerde {
+    border-top: solid 5px $verde-nuco;
+    border-right: solid 5px $verde-nuco;
+    border-bottom: solid 5px $verde-nuco;
+    border-left: solid 5px $verde-nuco;
+    border-radius: 2em;
+}
+
+@mixin imagenesProductos {
+    width: 325px;
+    display: inline-block;
+    margin: 30px;
+    margin-bottom: 15px;
+}
+
+/* normalize */
+*{
+    margin: 0px; 
+    padding: 0px;
+    font-family: 'Oswald', 'Varela Round', sans-serif;
+}
+
+/* fuente tipográfica para el html y body */
+html{
+    font-family: 'Oswald', 'Varela Round', sans-serif;
+}
+
+
+/*Galería: Galería de imágenes*/
+.galeríaPadreFlex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+    .galeriaHijosFlex {
+        width: 325px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 25px;
+        border-top: solid 5px $naranja-nuco;
+        border-right: solid 5px $naranja-nuco;
+        border-bottom: solid 5px $naranja-nuco;
+        border-left: solid 5px $naranja-nuco;
+        border-radius: 30px;
+    }
+}
+
+ 
+
+/* TRANSFORMACIONES agranda imágenes de Galería*/
+.transicionGaleria {
+    transition: all 2s;/* propiedad duración*/
+}
+.transicionGaleria:hover {
+    width: 25em;
+}
+/* TRANSFORMACIONES agranda imágenes de Productos*/
+.transicionProductos {
+    transition: all 2s;/* propiedad duración*/
+}
+.transicionProductos:hover {
+    align-self: center;
+    width: 20em;
+}
+
+
+/*INICIO*/
+
+/* sectionBase, establece una section de base, con color de fondo y texto*/
+.sectionBase{
+    background-color: rgb(151, 230, 250);
+    color: $azul-nuco;
+    background-image: linear-gradient(to right, $amarillo-nuco, $naranja-nuco);
+}
+
+/*pseudo h1 inicial en index*/
+.textoInicio {
+    color: $azul-nuco;
+    font-size: 50px;
+    padding-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 2.5px;
+}
+
+.textoInicioGaleria {
+    color: $verde-nuco;
+    font-size: 50px;
+    padding-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 2.5px;
+}
+
+/* ANIMACIONES */
+.animaTexto{
+    animation-name: textoEnMov;/* nombre del keyframe*/
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 25s;
+    animation-delay: 1s;
+    transform: translateX(0px);
+}
+
+@keyframes textoEnMov {
+    0%/* inicio*/ {
+    }
+    20% {
+        opacity: 1;
+        transform: translateX(250px);/* Eje X, eje Y*/
+    }
+    40% { 
+        opacity: 1;
+        transform: translateX(0px);/* Eje X, eje Y*/
+        transform: translateX(250px);/* Eje X, eje Y*/
+        transform: translateX(-250px);/* Eje X, eje Y*/
+    }
+    60%{
+        transform: translateX(100px);/* Eje X, eje Y*/
+    }
+    80%{ 
+        opacity: 1;
+        transform: translateX(0px);/* Eje X, eje Y*/
+    }
+    100%/* final*/ {
+    }
+}
+
+/*IMAGENES carrusel inicial*/
+.imgParaCarrusel {
+    display: flex;
+    border-top: solid 5px $naranja-nuco;
+    border-right: solid 5px $naranja-nuco;
+    border-bottom: solid 5px $naranja-nuco;
+    border-left: solid 5px $naranja-nuco;
+    border-radius: 30px;
+}
+
+/*BLOQUES BEM*/
+/*Imágen Taller*/
+.galeriaTaller{
+    padding: 5em;
+    @media (min-width: 200px) and (max-width: 480px) {
+        padding: 10px;
+    }
+
+}
+
+.galeriaBannerFlex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+
+.galeriaBannerFlex__imgBanners {
+    width: 350px;
+    display: inline-block;
+    justify-content: space-evenly;
+    border: solid 5px  $verde-nuco;
+    border-radius: 30px;
+    margin-bottom: 70px;
+}
+
+.galeriaTaller__galeriaTallerPintando {
+    color: rgb(255, 255, 255);
+    margin: 2px;
+}
+
+.galeriaTallerPintando--textoImagenImgRight {
+    float: right;
+	width: 200px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    border: solid 5px  $verde-nuco;
+    border-radius: 30px;
+    @media (min-width: 200px) and (max-width: 480px) {
+        margin-left: 5px;
+        float: none;
+        width: 100vw;
+    }
+}
+
+.galeriaTallerPintando--texto {
+    line-height: 1.5;
+    letter-spacing: .5px;
+    word-spacing: 2.5px;
+    color: #ffffff;
+    font-size: 1.5em;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    @media (min-width: 200px) and (max-width: 480px) {
+        line-height: normal;
+        letter-spacing: .75;
+        word-spacing: .75;
+        color: #ffffff;
+        font-size: 6px;
+    }
+}
+
+
+/*Color de h1 dentro de sections*/
+.sectionBase__h1 {
+    color: $verde-nuco;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-shadow:1px 1px 1px $amarillo-nuco;
+}
+/*Color de h2 dentro de section*/
+.sectionBase__h2 {
+    color: $azul-nuco;
+    font-size: 27.5px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    text-shadow:1px 1px 1px $amarillo-nuco;
+}
+
+
+.sectionBase__texto--em{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/*Color de h3 dentro de section*/
+.sectionBase__h3 {
+    color:$naranja-nuco;
+    letter-spacing: 2px;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+/*NOSOTROS*/
+/*Color de texto de párrafo dentro de Nosotros */
+.textoNosotros {
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+/*Texto Nosotros*/
+.interlineado {
+    line-height: 1.5;
+}
+.espaciadoLetras {
+    letter-spacing: .5px;
+}
+.espaciadoPalabras {
+    word-spacing: 2.5px;
+}
+/*em dentro de párrado*/
+.pEm{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sectionBase__texto {
+    @extend .interlineado;
+    word-spacing: 2.5px;
+    color: #ffffff;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+
+.galeriaTallerPintando--texto {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+/*IMAGENES
+carrusel*/
+.imgBannerCarrusel {
+    @include imagenesGaleriasDisplay();
+    @include imagenesGaleriasBordesNaranja();
+}
+
+/*Banner Textil*/
+.imgBannerTextil {
+    @include imagenesGaleriasBordesAzul();
+}
+
+/*Características para fotos de producto en Textil*/
+.imgTextil {
+    @include imagenesProductos();
+    @include imagenesGaleriasBordesAzul();
+}
+
+/*Banner Cerámica*/
+.imgBannerCeramica {
+    @include imagenesGaleriasBordesAmarillo();
+}
+
+/*Características para fotos de producto en Ceramica*/
+.imgCeramica {
+    @include imagenesProductos();
+    @include imagenesGaleriasBordesAmarillo();
+}
+
+/*Herramientas de prueba sobre texto alrededor de imágen, Float Flex Overflow*/
+.textoSobreImagen-FloatLeft {	
+    margin:auto;
+    display: inline-block;
+	margin-top: 15px;
+	width: 350px;
+	padding: 15px;
+    justify-content: center;
+    text-align: left;
+}
+.textoSobreImagen-FloatRight {	
+    margin:auto;
+    display: inline-block;
+	margin-top: 15px;
+	width: 350px;
+	padding: 15px;
+    justify-content: center;
+    text-align: right;
+}
+.textoImagenImgLeft {
+    display: inline-flex;
+    float: left;
+	width: 150px;
+    margin-top: 5px;
+    margin-right: 15px;
+    padding: auto;
+    border: solid 1px  $verde-nuco;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.galeriaFloatFlex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-bottom: 20px;
+}
+
+.textoImagenImgOverflow {
+    width: 400px;
+    height: 250px;
+    margin:auto;
+    display: inline-block;
+	margin-top: 15px;
+    overflow: auto;
+    padding: 15px;
+    justify-content: center;
+    text-align: right;
+}
+
+/* Diferentes sections*/
+.sectionOne {
+    background-color: rgb(197, 241, 252);
+    color:$naranja-nuco;
+}
+.sectionTwo {
+    background-color: rgb(197, 252, 215);
+    color:$naranja-nuco;
+}
+.sectionThree {
+    background-color: rgb(197, 241, 252);
+    color:$naranja-nuco;
+}
+
+/*Video de galería*/
+.videoGaleria {
+    margin: auto;
+    width: 65%;
+    height: 50vh;
+    margin-top: 15px;
+    display: block;
+    @include imagenesGaleriasBordesAzul()
+}
+
+/*cita video Fabrica Tomada, color y tamaño texto, alineación centrada*/
+.citaFabricaTomada {
+    color:$naranja-nuco;
+    font-size: 15px;
+    text-align: center;
+}
+
+/*Formularios, Caracteristicas, colores de fondo y párrafo*/
+.formProductos {
+    width: 300px;
+    display: block;
+    border: solid 1px $amarillo-nuco;
+    padding: 15px;
+    margin: auto;
+}
+.formProductosField {
+    width: 260px;
+    display: block;
+    padding: 15px;
+    margin: auto;
+}
+.formContacoField {
+    width: 260px;
+    display: block;
+    border: solid 2px $azul-nuco;
+    padding: 15px;
+    margin: auto;
+}
+.formProductosTamano {
+    width: 230px;
+    display: inline-block;
+    border: solid 1px $verde-nuco;
+    margin: 5px;
+    padding: 5px;
+}
+.formProductosColores {
+    width: 230px;
+    display: inline-block;
+    border: solid 1px $verde-nuco;
+    margin: 5px;
+    padding: 5px;
+}
+.formProductosCantidad {
+    width: 230px;
+    display: inline-block;
+    border: solid 1px $verde-nuco;
+    margin: 5px;
+    padding: 5px;
+}
+.formBotones {
+    width: 230px;
+    display: inline-block;
+    border: solid 1px $verde-nuco;
+    margin: 5px;
+    padding: 5px;
+}
+.formBotonesContacto {
+    width: 230px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+}
+.formAcepta {
+    display: inline-block;
+    border: solid 1px $verde-nuco;
+    margin: 5px;
+    padding: 5px;
+}
+
+.formContacto {
+    border: solid 5px $verde-nuco;
+    border-radius: 25px;
+    padding: 1em;
+    margin: 4em;
+}
+
+.formColorFondo {
+    background-color: $naranja-nuco;
+}
+
+.formContactoEnviar {
+    background-color: $amarillo-nuco;
+    border: solid 5px $amarillo-nuco;
+    border-radius: .5em;
+    font-weight: bold;
+}
+.formContactoEnviarItem {
+    background-color: $amarillo-nuco;
+    border: solid 5px $amarillo-nuco;
+    border-radius: .25em;
+    font-weight: bold;
+}
+
+.textoIlustraciones {
+    color: $rosa-nuco;
+    font-size: 1.5em;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.textoDescriptivo {
+    color:#ffffff;
+    font-size: 17.5px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.textoTienda {
+    color: $naranja-nuco;
+    font-size: 17.5px;
+    margin-left: 70px;
+    margin-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/*Boton interno, link interno*/
+.subbotonNav {
+    display: none;
+    left: 0;
+    background-color: $rosa-nuco;
+    margin: 5px;
+    padding: 3px;
+    width: 90%;
+    border-radius: 5px;
+    z-index: 1;
+    text-decoration: none;
+    list-style-type: none;
+    color: $azul-nuco;
+}
+.subbotonNav a {
+    float: center;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.subnavMenu:hover .subbotonNav {
+    display: block;
+}
+
+.subnavMenu:hover .subnav-contentMenu {
+    display: inline;
+}
+
+.navHijoEnHeader a:hover, .botonNav:hover, .subbotonNav:hover {
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+.container {
+    max-width: 960px;
+}

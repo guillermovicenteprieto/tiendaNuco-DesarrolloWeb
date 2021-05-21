@@ -1,0 +1,251 @@
+/* Media Queries */
+/* MOBILE */
+@media (min-width: 200px) and (max-width: 480px) {
+  body {
+    background-color: white;
+  }
+
+  .textoInicio {
+    font-size: 15px;
+  }
+
+  .textoFixed {
+    display: none;
+  }
+
+  .ojosFixedRight {
+    display: none;
+  }
+
+  .ojosFixedLeft {
+    display: none;
+  }
+
+  .mediaContacto {
+    width: 80vw;
+  }
+
+  .navPadreEnHeader .navHijoEnHeaderRedes {
+    display: none;
+  }
+
+  .ocultaMedia {
+    display: none;
+  }
+
+  .animaBarraLat {
+    display: none;
+  }
+
+  .tarjetasIlustraciones__titulo {
+    display: none;
+  }
+
+  .tarjetasIlustraciones__descripcionGeneral {
+    display: none;
+  }
+
+  .botonIlustraciones {
+    display: none;
+  }
+
+  .botonIlustraciones:hover {
+    display: none;
+  }
+
+  .botonIlustraciones--Rosa {
+    display: none;
+  }
+
+  .botonIlustraciones--Rosa:hover {
+    display: none;
+  }
+
+  .botonIlustraciones--botonALaDerecha {
+    display: none;
+  }
+
+  .botonIlustraciones__texto {
+    display: none;
+  }
+
+  .botonIlustraciones:hover {
+    display: none;
+  }
+
+  .botonIlustraciones--Rosa:hover {
+    display: none;
+  }
+
+  .frase {
+    display: none;
+  }
+
+  .botonIlustraciones .botonIlustraciones--Rosa .botonIlustraciones--botonALaDerecha {
+    display: none;
+  }
+
+  .galeriaTaller {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .galeriaTaller__galeriaTallerPintando {
+    color: #a44caf;
+    margin: 5px;
+  }
+
+  .galeriaTallerPintando--textoImagenImgRight {
+    display: none;
+  }
+
+  .galeriaTallerPintando--texto {
+    color: #27a1aa;
+    font-size: 5px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 480px) and (max-width: 600px) {
+  /* propiedades CSS */
+  h1 {
+    font-size: 14px;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  .textoFixed {
+    display: none;
+  }
+
+  .textoInicio {
+    font-size: 30px;
+  }
+
+  .ojosFixedRight {
+    display: none;
+  }
+
+  .ojosFixedLeft {
+    display: none;
+  }
+
+  .mediaContacto {
+    width: 80vw;
+  }
+
+  .ocultaMedia {
+    display: none;
+  }
+
+  .navPadreEnHeader .navHijoEnHeaderRedes {
+    display: none;
+  }
+
+  .animaBarraLat {
+    display: none;
+  }
+
+  #grillaNucobarraLat {
+    display: none;
+  }
+
+  .tarjetasIlustraciones__titulo {
+    display: none;
+  }
+
+  .tarjetasIlustraciones__extracto {
+    line-height: 0.75em;
+  }
+}
+@media (min-width: 600px) and (max-width: 768px) {
+  h1 {
+    font-size: 14px;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  .textoInicio {
+    font-size: 50px;
+  }
+
+  .textoFixed {
+    display: none;
+  }
+
+  .ojosFixedRight {
+    display: none;
+  }
+
+  .ojosFixedLeft {
+    display: none;
+  }
+
+  .mediaContacto {
+    width: 80vw;
+  }
+
+  .navPadreEnHeader .navHijoEnHeaderRedes {
+    display: none;
+  }
+
+  .ocultaMedia {
+    display: none;
+  }
+
+  .ocultaMediaImgBan {
+    display: none;
+  }
+
+  .animaBarraLat {
+    display: none;
+  }
+
+  .tarjetasIlustraciones__titulo {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1025px) {
+  .textoFixed {
+    display: none;
+  }
+
+  .ojosFixedRight {
+    display: none;
+  }
+
+  .ojosFixedLeft {
+    display: none;
+  }
+
+  .mediaContacto {
+    width: 80vw;
+  }
+
+  .navPadreEnHeader .navHijoEnHeaderRedes {
+    display: none;
+  }
+
+  .ocultaMediaImgBan {
+    display: none;
+  }
+}
+/* Tablet */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .navPadreEnHeader .navHijoEnHeaderRedes {
+    display: none;
+  }
+
+  .ocultaMediaImgBan {
+    display: none;
+  }
+}
+/* Desktop */
+@media (min-width: 1200px) {
+  body {
+    background-color: #ffffff;
+  }
+}
