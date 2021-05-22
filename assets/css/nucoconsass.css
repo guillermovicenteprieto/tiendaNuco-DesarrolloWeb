@@ -229,6 +229,28 @@
   border-left: solid 8px #0586e0;
   border-radius: 1em;
   margin: 3em; }
+  @media (min-width: 480px) and (max-width: 600px) {
+    .logoPrincipal {
+      width: 50%; } }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .logoPrincipal {
+      width: 80%; } }
+
+.logoPrincipal--404 {
+  width: 40%;
+  display: inline-block;
+  border-top: solid 2px #0586e0;
+  border-right: solid 2px #0586e0;
+  border-bottom: solid 2px #0586e0;
+  border-left: solid 2px #0586e0;
+  border-radius: 1em;
+  margin: 5em; }
+  @media (min-width: 480px) and (max-width: 600px) {
+    .logoPrincipal--404 {
+      width: 50%; } }
+  @media (min-width: 200px) and (max-width: 480px) {
+    .logoPrincipal--404 {
+      width: 80%; } }
 
 /*REDES*/
 .navHijoEnHeaderRedes {
@@ -716,6 +738,13 @@ html {
 .sectionBase {
   background-color: #97e6fa;
   color: #0586e0;
+  background-image: linear-gradient(to right, #e8bb20, #f85c32); }
+
+.sectionBase--404 {
+  background-color: #97e6fa;
+  color: #0586e0;
+  width: 100%;
+  height: 50vh;
   background-image: linear-gradient(to right, #e8bb20, #f85c32); }
 
 /*pseudo h1 inicial en index*/

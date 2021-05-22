@@ -207,6 +207,14 @@ html{
     background-image: linear-gradient(to right, $amarillo-nuco, $naranja-nuco);
 }
 
+.sectionBase--404{
+    background-color: rgb(151, 230, 250);
+    color: $azul-nuco;
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(to right, $amarillo-nuco, $naranja-nuco);
+}
+
 /*pseudo h1 inicial en index*/
 .textoInicio {
     color: $azul-nuco;
