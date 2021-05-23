@@ -2,7 +2,7 @@
 <html lang="es">
 
     <head>
-        <title>NUCO Contacto</title>
+        <title>NUCO 404</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,39 +28,51 @@
     <body>
         <!--Header-->
         <header>
-            <nav class="navPadreEnHeader">
+            <nav class="navPadreEnHeader__404">
                 <!--Menú secciones del sitio-->
-                <div class="navHijoEnHeader">
-                    <li class="botonNav subnavMenu"><a href="../index.html">vuelve a Inicio</a></li>
+                <div class="navHijoEnHeader__404">
+                    <li class="botonNav__404 subnavMenu__404"><a href="../index.html">vuelve al Inicio</a></li>
                 </div>
 
-                <!--Logo-->
-                <img class="logoPrincipal--404 transicionGaleria" src="../assets/img/ojoslogo2.jpg" title="NUCO arte ilustrado" alt="NUCO arte ilustrado"><a href="../index.html"></a>
+                <img class="navHijoEnHeaderLogo__404 logoPrincipal--404" src="../assets/img/ojoslogo2.jpg" title="NUCO arte ilustrado" alt="NUCO arte ilustrado"><a href="../index.html"></a>
 
             </nav>
         </header>
 
-        <section class="sectionBase--404">
+        <section class="sectionBase--404 navPadreEnHeader">
 
-            <p class="textoInicio animaTexto">
-                Error: HTTP 404
-            </p>
+            <figure class="navHijoEnHeader">
+                <img class="navHijoEnHeader gridFigure animaBarraLat"  src="../assets/img/oso circuspink.jpg" alt="oso circus">
 
-            <p class="sectionBase__texto">
-                Página No encontrada, 
-                <br> por favor regrese a Inicio!
+                <figcaption class="navHijoEnHeader">
+
+                    <p class="textoInicio--404 animaTexto">
+                        Error: HTTP 404
+                    </p>
+                </figcaption>
+
+            </figure>
+
+            <p class="sectionBase__texto--404">
+                Página no encontrada, por favor regrese al Inicio!
             </p>
 
         </section>
 
         <!--Footer o pie de página-->
-        <footer>
+        <footer class="footer_404">
+            <!--Dirección-->
             <address class="adressCursada">
+                <!--Logo-->
+                <div>
+                    <a href="../index.html">
+                        <img class="logoFooter" src="../assets/img/nucologo.png"  title="NUCO arte ilustrado" alt="NUCO arte ilustrado">
+                    </a>
+                </div>
                 <!--Cursada-->
                 <p class="negrita">
-                    Desarrollo Web en Coder House | Camada-16585
-                    <br>
-                    Profesor:Darío Ceballos | Tutor: José Pastrán | Alumno: Guillermo Vicente
+                    Desarrollo Web en Coder House | Camada-16585 | Profesor:Darío Ceballos | Tutor: José Pastrán | Alumno: Guillermo Vicente
+                    
                 </p>
             </address>
         </footer>

@@ -118,14 +118,14 @@
     }
 }
 .logoPrincipal--404 {
-    width: 40%;
+    width: 20%;
     display: inline-block;
     border-top: solid 2px $azul-nuco;
     border-right: solid 2px $azul-nuco;
     border-bottom: solid 2px$azul-nuco;
     border-left: solid 2px $azul-nuco;
     border-radius: 1em;
-    margin: 5em;
+    margin-top: 2em;
     @media (min-width: 480px) and (max-width: 600px) {
         width: 50%;
         }
@@ -281,6 +281,22 @@ footer a{
     color: #feafbc;
     text-decoration: none;
     list-style-type: none;
+}
+
+.footer_404{
+    background-image: linear-gradient(to right, $amarillo-nuco, $naranja-nuco);
+    font-size: 1em;
+    margin-top: .25em;
+    
+        address {
+            color: #ffffff;
+            font-size: 11px;
+            text-align: center;
+    
+            a {
+                text-decoration: none;
+        }
+    }
 }
 
 

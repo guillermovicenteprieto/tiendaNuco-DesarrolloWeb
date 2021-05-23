@@ -211,8 +211,27 @@ html{
     background-color: rgb(151, 230, 250);
     color: $azul-nuco;
     width: 100%;
-    height: 50vh;
+    height: 65vh;
     background-image: linear-gradient(to right, $amarillo-nuco, $naranja-nuco);
+}
+
+
+.sectionBase__texto--404 {
+    @extend .interlineado;
+    word-spacing: 2.5px;
+    color: $rosa-nuco-suave;
+    font-size: 1.25em;
+    text-align: center;
+    padding-top:5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    margin-left: 5em;
+    margin-right: 5em;
+    @media (min-width: 200px) and (max-width: 480px) {
+        padding: 5px;
+        word-spacing: 2px;
+        font-size: 1em;
+    }
 }
 
 /*pseudo h1 inicial en index*/
@@ -225,6 +244,17 @@ html{
     letter-spacing: 2px;
     word-spacing: 2.5px;
 }
+
+.textoInicio--404 {
+    color: $azul-nuco;
+    font-size: 40px;
+    padding-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 2.5px;
+}
+
 
 .textoInicioGaleria {
     color: $verde-nuco;
@@ -269,6 +299,145 @@ html{
     100%/* final*/ {
     }
 }
+
+
+.navPadreEnHeader__404 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: linear-gradient(to right, $amarillo-nuco, $naranja-nuco);
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    color:#ffffff;
+    text-decoration: none;
+    list-style-type: none;
+
+    .navHijoEnHeader__404 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-decoration: none;
+        list-style-type: none;
+
+        .botonNav__404 {
+            margin: 5px;
+            padding: 5px;
+            background-color:$verde-nuco;
+            border: solid 5px $rosa-nuco-suave;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 17.5px;  
+            color: $rosa-nuco;
+            text-decoration: none;
+            list-style-type: none;
+
+            .subbotonNav_404 {
+                display: none;
+                left: 0;
+                background-color: $rosa-nuco;
+                margin: 5px;
+                padding: 3px;
+                width: 90%;
+                border-radius: 5px;
+                z-index: 1;
+                text-decoration: none;
+                list-style-type: none;
+                color: #ffffff;
+
+                .subbotonNav__404 a {
+                    float: center;
+                    color: #ffffff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+
+/*LOGO*/
+
+.navPadreEnHeader__404 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to right, $amarillo-nuco, $naranja-nuco);
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    color:#ffffff;
+    text-decoration: none;
+    list-style-type: none;
+
+    .navHijoEnHeaderLogo__404 {
+       text-decoration: none;
+        list-style-type: none;
+    }
+}
+.gridFigure{
+    width: 25%;
+    align-items: center;
+}
+
+
+/* ANIMACIONES */
+.animaBarraLat {
+    background-color: #9d9e9e;
+    border-radius: 100%;
+    margin-top: 50px;
+    animation-name: efecto;/* nombre del keyframe*/
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    transform: translateX(300px);/* Eje X, eje Y*/
+}
+
+/* Linea de tiempo */
+@keyframes efecto {
+    0%/* inicio*/ {
+        /* Propiedades CSS */
+        background-color: white;
+        opacity: 0;
+    }
+    30% { 
+        border: solid 10px rgb(142, 163, 115);
+        background-image: linear-gradient(315deg, #9b4f58 0%, #a5698b 74%);
+        opacity: 1;
+        transform: translateX(-10px);/* Eje X, eje Y*/
+    }
+    
+    50%{ 
+        transform: translateX(0px);/* Eje X, eje Y*/
+        background-color: #fff;
+        transform: translateX(500px);/* Eje X, eje Y*/
+    }
+    65%{ 
+        opacity: 1;
+        border: solid 10px rgb(142, 163, 115);
+        background-image: linear-gradient(315deg, #9b4f58 0%, #a5698b 74%);
+        transform: translateX(0px);/* Eje X, eje Y*/
+    }
+    90%{ 
+        opacity: 1;
+        border: solid 10px rgb(142, 163, 115);
+        background-image: linear-gradient(315deg, #9b4f58 0%, #a5698b 74%);
+        transform: translateX(0px);/* Eje X, eje Y*/
+    }
+    
+    100%/* final*/ {
+        /* Propiedades CSS */
+        background-color: white;
+        color: #fff;
+    }
+}
+
+
 
 /*IMAGENES carrusel inicial*/
 .imgParaCarrusel {
@@ -348,7 +517,6 @@ html{
         font-size: 6px;
     }
 }
-
 
 /*Color de h1 dentro de sections*/
 .sectionBase__h1 {

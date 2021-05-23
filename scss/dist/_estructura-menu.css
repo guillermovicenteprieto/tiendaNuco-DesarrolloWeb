@@ -113,14 +113,14 @@
 }
 
 .logoPrincipal--404 {
-  width: 40%;
+  width: 20%;
   display: inline-block;
   border-top: solid 2px #0586e0;
   border-right: solid 2px #0586e0;
   border-bottom: solid 2px #0586e0;
   border-left: solid 2px #0586e0;
   border-radius: 1em;
-  margin: 5em;
+  margin-top: 2em;
 }
 @media (min-width: 480px) and (max-width: 600px) {
   .logoPrincipal--404 {
@@ -266,6 +266,20 @@ footer a {
   color: #feafbc;
   text-decoration: none;
   list-style-type: none;
+}
+
+.footer_404 {
+  background-image: linear-gradient(to right, #e8bb20, #f85c32);
+  font-size: 1em;
+  margin-top: 0.25em;
+}
+.footer_404 address {
+  color: #ffffff;
+  font-size: 11px;
+  text-align: center;
+}
+.footer_404 address a {
+  text-decoration: none;
 }
 
 /*Logo Footer*/
