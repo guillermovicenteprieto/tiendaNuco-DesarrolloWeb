@@ -1327,6 +1327,17 @@ html {
   font-weight: bold;
 }
 
+/*Color de h4 dentro de section*/
+.sectionBase__h4 {
+  color: #feafbc;
+  letter-spacing: 2px;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-weight: bold;
+}
+
 /*NOSOTROS*/
 /*Color de texto de párrafo dentro de Nosotros */
 .textoNosotros {
