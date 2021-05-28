@@ -1735,3 +1735,11 @@ a {
     padding: none;
   }
 }
+
+.estiloImagenProducto {
+  width: 36rem;
+}
+
+.estiloImagenProductoPeque {
+  width: 18rem;
+}
