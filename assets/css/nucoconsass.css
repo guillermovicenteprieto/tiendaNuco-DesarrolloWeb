@@ -1037,12 +1037,12 @@ html {
 /*Color de h2 dentro de section*/
 .sectionBase__h2 {
   color: #0586e0;
-  font-size: 27.5px;
+  font-size: 30px;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 10px;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #e8bb20; }
+  text-shadow: .75px .75px .75px white; }
 
 .sectionBase__texto--em {
   font-size: 1em;
