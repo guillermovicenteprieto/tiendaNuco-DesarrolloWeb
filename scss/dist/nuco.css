@@ -1025,7 +1025,7 @@ html {
 }
 
 .textoInicioGaleria {
-  color: #2fb33a;
+  color: #f85c32;
   font-size: 50px;
   padding-top: 20px;
   font-weight: bold;
@@ -1292,25 +1292,42 @@ html {
 /*Color de h1 dentro de sections*/
 .sectionBase__h1 {
   color: #2fb33a;
-  font-size: 30px;
+  font-size: 2.25em;
   text-align: center;
+  letter-spacing: 0.1em;
   padding-top: 50px;
   padding-bottom: 10px;
   font-weight: bold;
-  text-shadow: 1px 1px 1px #e8bb20;
+  text-shadow: 1px 1px 1px #feafbc;
 }
 
 /*Color de h2 dentro de section*/
 .sectionBase__h2 {
   color: #0586e0;
-  font-size: 30px;
+  font-size: 2em;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 15px;
   padding-bottom: 10px;
   font-weight: bold;
-  text-shadow: 0.75px 0.75px 0.75px white;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 1px #feafbc;
 }
 
+.nucoInMove {
+  --interval: 1s;
+  display: block;
+  text-shadow: 0 0 10px #feafbc, 0 0 1px white, 0 0 1px #fdd7dd, 0 0 1px white;
+  will-change: filter, color;
+  filter: saturate(100%);
+  animation: flicker steps(100) var(--interval) 5s infinite;
+}
+
+@keyframes flicker {
+  50% {
+    color: #2fb33a;
+    filter: saturate(100%);
+  }
+}
 .sectionBase__texto--em {
   font-size: 1em;
   font-weight: bold;

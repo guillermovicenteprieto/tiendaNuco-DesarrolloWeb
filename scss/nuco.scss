@@ -179,8 +179,6 @@ html{
     }
 }
 
- 
-
 /* TRANSFORMACIONES agranda imágenes de Galería*/
 .transicionGaleria {
     transition: all 2s;/* propiedad duración*/
@@ -196,7 +194,6 @@ html{
     align-self: center;
     width: 20em;
 }
-
 
 /*INICIO*/
 
@@ -257,7 +254,7 @@ html{
 
 
 .textoInicioGaleria {
-    color: $verde-nuco;
+    color: $naranja-nuco;
     font-size: 50px;
     padding-top: 20px;
     font-weight: bold;
@@ -521,23 +518,45 @@ html{
 /*Color de h1 dentro de sections*/
 .sectionBase__h1 {
     color: $verde-nuco;
-    font-size: 30px;
+    font-size: 2.25em;
     text-align: center;
+    letter-spacing: .1em;
     padding-top: 50px;
     padding-bottom: 10px;
     font-weight: bold;
-    text-shadow:1px 1px 1px $amarillo-nuco;
+    text-shadow:1px 1px 1px $rosa-nuco;
 }
 /*Color de h2 dentro de section*/
 .sectionBase__h2 {
     color: $azul-nuco;
-    font-size: 30px;
+    font-size: 2em;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 10px;
     font-weight: bold;
-    text-shadow:.75px .75px .75px white;
+    letter-spacing: .1em;
+    text-shadow:1px 1px 1px $rosa-nuco;
 }
+
+.nucoInMove {
+    --interval: 1s;
+    display: block;
+    text-shadow: 
+      0 0 10px $rosa-nuco,
+      0 0 1px white,
+      0 0 1px $rosa-nuco-suave,
+      0 0 1px white;
+    will-change: filter, color;
+    filter: saturate(100%);
+    animation: flicker steps(100) var(--interval) 5s infinite;
+  }
+     
+  @keyframes flicker {
+    50% {
+      color: $verde-nuco;
+      filter: saturate(100%);
+    }
+  }
 
 .sectionBase__texto--em{
     font-size: 1em;
