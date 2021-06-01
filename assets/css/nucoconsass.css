@@ -190,10 +190,12 @@
           text-decoration: none; }
 
 .subnavMenu:hover .subbotonNav {
-  display: block; }
+  display: block;
+  color: #ffffff; }
 
 .subnavMenu:hover .subnav-contentMenu {
-  display: inline; }
+  display: inline;
+  color: #ffffff; }
 
 .navHijoEnHeader a:hover, .botonNav:hover, .subbotonNav:hover {
   color: #ffffff; }
@@ -339,7 +341,8 @@
         text-decoration: none; }
 
 .subnavMenu:hover .subbotonNav {
-  display: block; }
+  display: block;
+  color: #ffffff; }
 
 .navHijoEnFooter {
   display: flex;
@@ -348,7 +351,12 @@
   text-decoration: none;
   list-style-type: none; }
   .navHijoEnFooter a {
-    text-decoration: none; }
+    color: #fdd7dd;
+    text-decoration: none;
+    list-style-type: none; }
+
+.navHijoEnFooter a:hover, .botonNav:hover, .subbotonNav:hover {
+  color: #ffffff; }
 
 /*FOOTER*/
 /*footer, background y color y tamaño texto*/
