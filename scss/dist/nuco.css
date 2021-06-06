@@ -308,10 +308,12 @@
 
 .subnavMenu:hover .subbotonNav {
   display: block;
+  color: #ffffff;
 }
 
 .subnavMenu:hover .subnav-contentMenu {
   display: inline;
+  color: #ffffff;
 }
 
 .navHijoEnHeader a:hover, .botonNav:hover, .subbotonNav:hover {
@@ -483,6 +485,7 @@
 
 .subnavMenu:hover .subbotonNav {
   display: block;
+  color: #ffffff;
 }
 
 .navHijoEnFooter {
@@ -493,7 +496,13 @@
   list-style-type: none;
 }
 .navHijoEnFooter a {
+  color: #fdd7dd;
   text-decoration: none;
+  list-style-type: none;
+}
+
+.navHijoEnFooter a:hover, .botonNav:hover, .subbotonNav:hover {
+  color: #ffffff;
 }
 
 /*FOOTER*/
@@ -965,7 +974,7 @@ html {
 
 .transicionProductos:hover {
   align-self: center;
-  width: 20em;
+  width: 15em;
 }
 
 /*INICIO*/

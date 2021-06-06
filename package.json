@@ -1,7 +1,7 @@
 {
   "name": "workingprogress",
   "version": "1.0.0",
-  "description": "",
+  "description": "packageJson para entrega de trabajo para Desarrollo Web en Coder House - Camada-16585 - Profesor Darío Ceballos - Tutor José Pastrán - Alumno Guillermo Vicente",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
 
-  "author": "",
+  "author": "Guillermo Vicente",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.0",
