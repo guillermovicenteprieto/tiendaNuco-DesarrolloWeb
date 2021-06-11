@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* IMPORTS */
 /* Media Queries */
 /* MOBILE */
 @media (min-width: 200px) and (max-width: 480px) {
@@ -707,11 +707,11 @@ footer a {
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Oswald', 'Varela Round', sans-serif; }
+  font-family: 'Varela', sans-serif; }
 
 /* fuente tipográfica para el html y body */
 html {
-  font-family: 'Oswald', 'Varela Round', sans-serif; }
+  font-family: 'Varela', sans-serif; }
 
 /*Galería: Galería de imágenes*/
 .galeríaPadreFlex {
@@ -741,7 +741,7 @@ html {
   /* propiedad duración*/ }
 
 .transicionGaleria:hover {
-  width: 25em; }
+  width: 20em; }
 
 /* TRANSFORMACIONES agranda imágenes de Productos*/
 .transicionProductos {
