@@ -102,7 +102,7 @@
 }
 
 .tarjetasIlustraciones__titulo {
-  font-family: "Oswald" sans-serif;
+  font-family: "Varela" sans-serif;
   font-size: 2em;
   color: #0586e0;
   text-align: center;
@@ -116,7 +116,7 @@
 .tarjetasIlustraciones__extracto {
   line-height: 1.25em;
   color: #ffffff;
-  font-family: "Oswald" sans-serif;
+  font-family: "Varela" sans-serif;
   font-size: 2em;
   text-align: center;
   font-weight: normal;
@@ -125,7 +125,7 @@
 .tarjetasIlustraciones__extracto--galeria {
   line-height: 1.25em;
   color: #feafbc;
-  font-family: "Oswald" sans-serif;
+  font-family: "Varela" sans-serif;
   font-size: 1.5em;
   text-align: center;
   font-weight: bold;
@@ -182,7 +182,7 @@
   margin-top: 2em;
   margin-bottom: 1em;
   font-size: 2em;
-  font-family: "Oswald";
+  font-family: "Varela";
   font-weight: 600;
   font-style: italic;
 }
